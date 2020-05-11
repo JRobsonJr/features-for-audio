@@ -2,7 +2,7 @@ const spotify = require('spotify-web-sdk');
 const fs = require('fs');
 const _ = require('lodash');
 
-const attributes = [ 
+const attributes = [
   'name', 'trackNumber', 'albumName', 'id', 'acousticness', 'danceability',
   'durationMs', 'energy', 'instrumentalness', 'key', 'liveness', 'loudness',
   'mode', 'speechiness', 'tempo', 'timeSignature', 'valence'
@@ -61,13 +61,21 @@ const getAlbumSummary = (albumAudioFeatures, albumName) => {
   return [].concat(average, max, min);
 }
 
+const escapeCommas = (value) => {
+  if (typeof value === 'string' && value.includes(',')) {
+    return `"${value}"`;
+  } else {
+    return value;
+  }
+}
+
 const writeTracksAudioFeatures = (audioFeatures, filePath) => {
   const stream = fs.createWriteStream(filePath);
   stream.once('open', () => {
     stream.write(`${attributes.join(',')}\n`);
     audioFeatures.forEach(track => {
       const values = attributes.map(attribute => track[attribute]);
-      stream.write(`${values.join(',')}\n`);
+      stream.write(`${values.map(escapeCommas)}\n`);
     })
     stream.end();
   });
