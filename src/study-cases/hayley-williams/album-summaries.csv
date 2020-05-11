@@ -1,0 +1,211 @@
+feature,albumName,value
+acousticness,All We Know Is Falling,0.00464502
+danceability,All We Know Is Falling,0.4709
+durationMs,All We Know Is Falling,215118.5
+energy,All We Know Is Falling,0.8716000000000002
+instrumentalness,All We Know Is Falling,0.00034837599999999996
+liveness,All We Know Is Falling,0.14847000000000002
+loudness,All We Know Is Falling,-4.0409
+speechiness,All We Know Is Falling,0.06301999999999999
+tempo,All We Know Is Falling,151.3898
+valence,All We Know Is Falling,0.44200000000000006
+acousticness,All We Know Is Falling_max,0.0226
+danceability,All We Know Is Falling_max,0.519
+durationMs,All We Know Is Falling_max,240040
+energy,All We Know Is Falling_max,0.94
+instrumentalness,All We Know Is Falling_max,0.00345
+liveness,All We Know Is Falling_max,0.277
+loudness,All We Know Is Falling_max,-2.989
+speechiness,All We Know Is Falling_max,0.14
+tempo,All We Know Is Falling_max,194.817
+valence,All We Know Is Falling_max,0.661
+acousticness,All We Know Is Falling_min,0.0000702
+danceability,All We Know Is Falling_min,0.333
+durationMs,All We Know Is Falling_min,185733
+energy,All We Know Is Falling_min,0.692
+instrumentalness,All We Know Is Falling_min,0
+liveness,All We Know Is Falling_min,0.0543
+loudness,All We Know Is Falling_min,-5.267
+speechiness,All We Know Is Falling_min,0.0261
+tempo,All We Know Is Falling_min,120.012
+valence,All We Know Is Falling_min,0.209
+acousticness,Riot!,0.0012404818181818182
+danceability,Riot!,0.520909090909091
+durationMs,Riot!,212027.81818181818
+energy,Riot!,0.8401818181818181
+instrumentalness,Riot!,0.0016930809090909091
+liveness,Riot!,0.14609090909090908
+loudness,Riot!,-3.7207272727272724
+speechiness,Riot!,0.047509090909090904
+tempo,Riot!,142.80481818181818
+valence,Riot!,0.5414545454545454
+acousticness,Riot!_max,0.00576
+danceability,Riot!_max,0.655
+durationMs,Riot!_max,238627
+energy,Riot!_max,0.95
+instrumentalness,Riot!_max,0.0185
+liveness,Riot!_max,0.279
+loudness,Riot!_max,-2.25
+speechiness,Riot!_max,0.0735
+tempo,Riot!_max,202.108
+valence,Riot!_max,0.838
+acousticness,Riot!_min,0.0000943
+danceability,Riot!_min,0.396
+durationMs,Riot!_min,189373
+energy,Riot!_min,0.611
+instrumentalness,Riot!_min,0
+liveness,Riot!_min,0.0792
+loudness,Riot!_min,-5.675
+speechiness,Riot!_min,0.0324
+tempo,Riot!_min,92.537
+valence,Riot!_min,0.186
+acousticness,Brand New Eyes,0.08145697272727272
+danceability,Brand New Eyes,0.4818181818181818
+durationMs,Brand New Eyes,219436.54545454544
+energy,Brand New Eyes,0.831
+instrumentalness,Brand New Eyes,0.0032227363636363636
+liveness,Brand New Eyes,0.17814545454545455
+loudness,Brand New Eyes,-4.286272727272728
+speechiness,Brand New Eyes,0.0621
+tempo,Brand New Eyes,153.7157272727273
+valence,Brand New Eyes,0.45763636363636356
+acousticness,Brand New Eyes_max,0.73
+danceability,Brand New Eyes_max,0.583
+durationMs,Brand New Eyes_max,267653
+energy,Brand New Eyes_max,0.98
+instrumentalness,Brand New Eyes_max,0.0322
+liveness,Brand New Eyes_max,0.332
+loudness,Brand New Eyes_max,-2.175
+speechiness,Brand New Eyes_max,0.108
+tempo,Brand New Eyes_max,195.972
+valence,Brand New Eyes_max,0.649
+acousticness,Brand New Eyes_min,0.0000808
+danceability,Brand New Eyes_min,0.395
+durationMs,Brand New Eyes_min,181507
+energy,Brand New Eyes_min,0.266
+instrumentalness,Brand New Eyes_min,0
+liveness,Brand New Eyes_min,0.0387
+loudness,Brand New Eyes_min,-11.217
+speechiness,Brand New Eyes_min,0.0272
+tempo,Brand New Eyes_min,106.46
+valence,Brand New Eyes_min,0.152
+acousticness,Singles Club,0.041264060000000005
+danceability,Singles Club,0.45775000000000005
+durationMs,Singles Club,199253.25
+energy,Singles Club,0.79025
+instrumentalness,Singles Club,0.0047088699999999995
+liveness,Singles Club,0.21225
+loudness,Singles Club,-3.944
+speechiness,Singles Club,0.0577
+tempo,Singles Club,120.05574999999999
+valence,Singles Club,0.4445
+acousticness,Singles Club_max,0.165
+danceability,Singles Club_max,0.519
+durationMs,Singles Club_max,208095
+energy,Singles Club_max,0.969
+instrumentalness,Singles Club_max,0.0163
+liveness,Singles Club_max,0.371
+loudness,Singles Club_max,-2.599
+speechiness,Singles Club_max,0.119
+tempo,Singles Club_max,164.999
+valence,Singles Club_max,0.716
+acousticness,Singles Club_min,0.00000544
+danceability,Singles Club_min,0.413
+durationMs,Singles Club_min,185660
+energy,Singles Club_min,0.368
+instrumentalness,Singles Club_min,0.00000248
+liveness,Singles Club_min,0.108
+loudness,Singles Club_min,-7.661
+speechiness,Singles Club_min,0.0277
+tempo,Singles Club_min,75.004
+valence,Singles Club_min,0.113
+acousticness,Paramore,0.17197756470588238
+danceability,Paramore,0.5188823529411765
+durationMs,Paramore,225767
+energy,Paramore,0.7459411764705882
+instrumentalness,Paramore,0.01036147176470588
+liveness,Paramore,0.22238823529411766
+loudness,Paramore,-6.366764705882352
+speechiness,Paramore,0.059552941176470586
+tempo,Paramore,125.46217647058823
+valence,Paramore,0.512235294117647
+acousticness,Paramore_max,0.965
+danceability,Paramore_max,0.739
+durationMs,Paramore_max,470933
+energy,Paramore_max,0.99
+instrumentalness,Paramore_max,0.174
+liveness,Paramore_max,0.799
+loudness,Paramore_max,-3.091
+speechiness,Paramore_max,0.0921
+tempo,Paramore_max,195.955
+valence,Paramore_max,0.824
+acousticness,Paramore_min,0.0000285
+danceability,Paramore_min,0.369
+durationMs,Paramore_min,52600
+energy,Paramore_min,0.258
+instrumentalness,Paramore_min,0
+liveness,Paramore_min,0.021
+loudness,Paramore_min,-15.356
+speechiness,Paramore_min,0.0262
+tempo,Paramore_min,79.994
+valence,Paramore_min,0.109
+acousticness,After Laughter,0.12148045333333334
+danceability,After Laughter,0.6671666666666667
+durationMs,After Laughter,213207.75
+energy,After Laughter,0.7253333333333333
+instrumentalness,After Laughter,0.07892789583333333
+liveness,After Laughter,0.11516666666666668
+loudness,After Laughter,-6.497166666666666
+speechiness,After Laughter,0.038066666666666665
+tempo,After Laughter,114.569
+valence,After Laughter,0.6719166666666668
+acousticness,After Laughter_max,0.852
+danceability,After Laughter_max,0.786
+durationMs,After Laughter_max,260213
+energy,After Laughter_max,0.856
+instrumentalness,After Laughter_max,0.852
+liveness,After Laughter_max,0.324
+loudness,After Laughter_max,-3.763
+speechiness,After Laughter_max,0.0505
+tempo,After Laughter_max,154.904
+valence,After Laughter_max,0.926
+acousticness,After Laughter_min,0.00000514
+danceability,After Laughter_min,0.511
+durationMs,After Laughter_min,182693
+energy,After Laughter_min,0.286
+instrumentalness,After Laughter_min,0.00000314
+liveness,After Laughter_min,0.0219
+loudness,After Laughter_min,-10.917
+speechiness,After Laughter_min,0.0266
+tempo,After Laughter_min,90.004
+valence,After Laughter_min,0.242
+acousticness,Petals For Armor,0.2474333333333333
+danceability,Petals For Armor,0.7242
+durationMs,Petals For Armor,223417.2
+energy,Petals For Armor,0.5899333333333333
+instrumentalness,Petals For Armor,0.058761642666666655
+liveness,Petals For Armor,0.1539466666666667
+loudness,Petals For Armor,-7.812266666666668
+speechiness,Petals For Armor,0.048926666666666674
+tempo,Petals For Armor,104.52606666666667
+valence,Petals For Armor,0.5838
+acousticness,Petals For Armor_max,0.569
+danceability,Petals For Armor_max,0.877
+durationMs,Petals For Armor_max,321045
+energy,Petals For Armor_max,0.86
+instrumentalness,Petals For Armor_max,0.451
+liveness,Petals For Armor_max,0.38
+loudness,Petals For Armor_max,-4.587
+speechiness,Petals For Armor_max,0.0785
+tempo,Petals For Armor_max,143.993
+valence,Petals For Armor_max,0.896
+acousticness,Petals For Armor_min,0.0613
+danceability,Petals For Armor_min,0.564
+durationMs,Petals For Armor_min,165574
+energy,Petals For Armor_min,0.339
+instrumentalness,Petals For Armor_min,0.00000214
+liveness,Petals For Armor_min,0.0518
+loudness,Petals For Armor_min,-12.195
+speechiness,Petals For Armor_min,0.0296
+tempo,Petals For Armor_min,78.483
+valence,Petals For Armor_min,0.336
