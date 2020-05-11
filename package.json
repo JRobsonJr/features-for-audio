@@ -1,0 +1,10 @@
+{
+  "name": "features-for-audio",
+  "version": "1.0.0",
+  "description": "Understanding music through Spotify's audio features data.",
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "lodash": "^4.17.15",
+    "spotify-web-sdk": "^0.6.1"
+  }
+}
