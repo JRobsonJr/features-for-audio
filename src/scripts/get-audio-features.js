@@ -1,16 +1,6 @@
 const spotify = require('spotify-web-sdk');
-const fs = require('fs');
+const writeAudioFeatures = require('./write-audio-features');
 const _ = require('lodash');
-
-const attributes = [
-  'name', 'trackNumber', 'albumName', 'id', 'acousticness', 'danceability',
-  'durationMs', 'energy', 'instrumentalness', 'key', 'liveness', 'loudness',
-  'mode', 'speechiness', 'tempo', 'timeSignature', 'valence'
-];
-const albumSummaryFeatures = [
-  'acousticness', 'danceability', 'durationMs', 'energy', 'instrumentalness',
-  'liveness', 'loudness', 'speechiness', 'tempo', 'valence'
-];
 
 const main = async (albums, spotifyToken, audioFeaturesFilePath, albumSummariesFilePath) => {
   let audioFeatures = [];
@@ -21,10 +11,10 @@ const main = async (albums, spotifyToken, audioFeaturesFilePath, albumSummariesF
     audioFeatures = audioFeatures.concat(albumAudioFeatures);
     albumSummaries = albumSummaries.concat(getAlbumSummary(albumAudioFeatures, name));
   }
-  writeTracksAudioFeatures(audioFeatures, audioFeaturesFilePath);
-  writeAlbumSummaries(albumSummaries, albumSummariesFilePath);
+  writeAudioFeatures('tracks', audioFeatures, audioFeaturesFilePath);
+  writeAudioFeatures('albums', albumSummaries, albumSummariesFilePath);
+  return { audioFeatures, albumSummaries };
 }
-
 
 const getAlbumAudioFeatures = async (spotifyToken, tracks, albumName) => {
   spotify.init({ token: spotifyToken });
@@ -40,58 +30,18 @@ const getAlbumAudioFeatures = async (spotifyToken, tracks, albumName) => {
 }
 
 const getAlbumSummary = (albumAudioFeatures, albumName) => {
-  const average = albumSummaryFeatures.map(feature => ({
+  const albumSummaryFeatures = [
+    'acousticness', 'danceability', 'durationMs', 'energy', 'instrumentalness',
+    'liveness', 'loudness', 'speechiness', 'tempo', 'valence'
+  ];
+  
+  return albumSummaryFeatures.map(feature => ({
     feature,
     albumName,
-    value: _.sumBy(albumAudioFeatures, feature) / albumAudioFeatures.length
+    avg: _.sumBy(albumAudioFeatures, feature) / albumAudioFeatures.length,
+    max: _.maxBy(albumAudioFeatures, feature)[feature],
+    min: _.minBy(albumAudioFeatures, feature)[feature]
   }));
-
-  const max = albumSummaryFeatures.map(feature => ({
-    feature,
-    albumName: `${albumName}_max`,
-    value: _.maxBy(albumAudioFeatures, feature)[feature]
-  }));
-
-  const min = albumSummaryFeatures.map(feature => ({
-    feature,
-    albumName: `${albumName}_min`,
-    value: _.minBy(albumAudioFeatures, feature)[feature]
-  }));
-
-  return [].concat(average, max, min);
 }
 
-const escapeCommas = (value) => {
-  if (typeof value === 'string' && value.includes(',')) {
-    return `"${value}"`;
-  } else {
-    return value;
-  }
-}
-
-const writeTracksAudioFeatures = (audioFeatures, filePath) => {
-  const stream = fs.createWriteStream(filePath);
-  stream.once('open', () => {
-    stream.write(`${attributes.join(',')}\n`);
-    audioFeatures.forEach(track => {
-      const values = attributes.map(attribute => track[attribute]);
-      stream.write(`${values.map(escapeCommas)}\n`);
-    })
-    stream.end();
-  });
-}
-
-const writeAlbumSummaries = (albumSummaries, filePath) => {
-  const stream = fs.createWriteStream(filePath);
-  stream.once('open', () => {
-    const columns = ['feature', 'albumName', 'value'];
-    stream.write(`${columns.join(',')}\n`);
-    albumSummaries.forEach(albumSummary => {
-      const values = columns.map(attribute => albumSummary[attribute]);
-      stream.write(`${values.join(',')}\n`);
-    })
-    stream.end();
-  });
-}
-
-module.exports = main;
+module.exports = { main, getAlbumSummary };
