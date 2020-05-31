@@ -5,7 +5,7 @@ const trackColumns = [
   'durationMs', 'energy', 'instrumentalness', 'key', 'liveness', 'loudness',
   'mode', 'speechiness', 'tempo', 'timeSignature', 'valence'
 ];
-const albumColumns = ['feature', 'albumName', 'avg', 'max', 'min'];
+const albumColumns = ['feature', 'albumName', 'med', 'avg', 'max', 'min'];
 
 const escapeCommas = (value) => {
   if (typeof value === 'string' && value.includes(',')) {

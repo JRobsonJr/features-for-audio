@@ -29,6 +29,16 @@ const getAlbumAudioFeatures = async (spotifyToken, tracks, albumName) => {
   }));
 }
 
+const median = (values) => {
+  const sortedValues = values.sort();
+  const length = sortedValues.length;
+  if (length % 2 === 0) {
+    return (sortedValues[length / 2] + sortedValues[(length / 2) - 1]) / 2;
+  } else {
+    return sortedValues[(length - 1) / 2];
+  }
+};
+
 const getAlbumSummary = (albumAudioFeatures, albumName) => {
   const albumSummaryFeatures = [
     'acousticness', 'danceability', 'durationMs', 'energy', 'instrumentalness',
@@ -38,6 +48,7 @@ const getAlbumSummary = (albumAudioFeatures, albumName) => {
   return albumSummaryFeatures.map(feature => ({
     feature,
     albumName,
+    med: median(albumAudioFeatures.map(aF => aF[feature])),
     avg: _.sumBy(albumAudioFeatures, feature) / albumAudioFeatures.length,
     max: _.maxBy(albumAudioFeatures, feature)[feature],
     min: _.minBy(albumAudioFeatures, feature)[feature]

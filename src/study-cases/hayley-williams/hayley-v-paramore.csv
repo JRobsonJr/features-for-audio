@@ -1,21 +1,21 @@
-feature,albumName,avg,max,min
-acousticness,Paramore Discography,0.08465480738461538,0.965,0.00000514
-danceability,Paramore Discography,0.5291846153846154,0.786,0.333
-durationMs,Paramore Discography,216782.12307692308,470933,52600
-energy,Paramore Discography,0.7945384615384613,0.99,0.258
-instrumentalness,Paramore Discography,0.01845650769230769,0.852,0
-liveness,Paramore Discography,0.17019846153846147,0.799,0.021
-loudness,Paramore Discography,-5.084046153846153,-2.175,-15.356
-speechiness,Paramore Discography,0.05439846153846153,0.14,0.0261
-tempo,Paramore Discography,134.82356923076918,202.108,75.004
-valence,Paramore Discography,0.5224461538461538,0.926,0.109
-acousticness,Petals For Armor,0.2474333333333333,0.569,0.0613
-danceability,Petals For Armor,0.7242,0.877,0.564
-durationMs,Petals For Armor,223417.2,321045,165574
-energy,Petals For Armor,0.5899333333333333,0.86,0.339
-instrumentalness,Petals For Armor,0.058761642666666655,0.451,0.00000214
-liveness,Petals For Armor,0.1539466666666667,0.38,0.0518
-loudness,Petals For Armor,-7.812266666666668,-4.587,-12.195
-speechiness,Petals For Armor,0.048926666666666674,0.0785,0.0296
-tempo,Petals For Armor,104.52606666666667,143.993,78.483
-valence,Petals For Armor,0.5838,0.896,0.336
+feature,albumName,med,avg,max,min
+acousticness,Paramore Discography,0.00166,0.08465480738461538,0.965,0.00000514
+danceability,Paramore Discography,0.514,0.5291846153846154,0.786,0.333
+durationMs,Paramore Discography,218627,216782.12307692308,470933,52600
+energy,Paramore Discography,0.88,0.7945384615384613,0.99,0.258
+instrumentalness,Paramore Discography,0.0000298,0.01845650769230769,0.852,0
+liveness,Paramore Discography,0.122,0.17019846153846147,0.799,0.021
+loudness,Paramore Discography,-3.763,-5.084046153846153,-2.175,-15.356
+speechiness,Paramore Discography,0.0468,0.05439846153846153,0.14,0.0261
+tempo,Paramore Discography,145.025,134.82356923076918,202.108,75.004
+valence,Paramore Discography,0.549,0.5224461538461538,0.926,0.109
+acousticness,Petals For Armor,0.235,0.2474333333333333,0.569,0.0613
+danceability,Petals For Armor,0.757,0.7242,0.877,0.564
+durationMs,Petals For Armor,214959,223417.2,321045,165574
+energy,Petals For Armor,0.598,0.5899333333333333,0.86,0.339
+instrumentalness,Petals For Armor,0.00477,0.058761642666666655,0.451,0.00000214
+liveness,Petals For Armor,0.118,0.1539466666666667,0.38,0.0518
+loudness,Petals For Armor,-7.24,-7.812266666666668,-4.587,-12.195
+speechiness,Petals For Armor,0.046,0.048926666666666674,0.0785,0.0296
+tempo,Petals For Armor,143.993,104.52606666666667,143.993,78.483
+valence,Petals For Armor,0.524,0.5838,0.896,0.336
